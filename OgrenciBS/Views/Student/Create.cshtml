@@ -1,0 +1,32 @@
+﻿@model Student
+
+<form method="post" asp-action="Edit">
+    <table>
+        <tr>
+            <td>Öğrencinin Adı:</td>
+            <td><input asp-for="Name" /></td>
+        </tr>
+        <tr>
+            <td>Öğrencinin Soyadı:</td>
+            <td><input asp-for="Surname" /></td>
+        </tr>
+        <tr>
+            <td>Not Ortalaması:</td>
+            <td><input asp-for="Gpa" /></td>
+        </tr>
+        <tr>
+            <td>Bölümü:</td>
+            <td>
+                <select asp-for="DepartmentId" asp-items="ViewBag.BolumListesi">
+                    <option value="">-- Seçiniz --</option>
+                </select>
+
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <button type="submit">Kaydet</button>
+            </td>
+        </tr>
+    </table>
+</form>
