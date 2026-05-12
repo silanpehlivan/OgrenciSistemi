@@ -86,10 +86,9 @@ Uygulama, `StudentController` ve `DepartmentController` üzerinden gelen istekle
 3. `appsettings.json` içindeki SQL Server bağlantısını düzenleyin  
 4. Package Manager Console:
 ```bash
-Update-Database
+Update-Database komutunu çalıştırın  
+5. Projeyi F5 ile başlatın
 ```
-komutunu çalıştırın  
-5. Projeyi F5 ile başlatın  
 
 ---
 
