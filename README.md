@@ -102,7 +102,7 @@ OgrenciSistemi-master/
 │   ├── Views/         # Razor UI sayfaları
 │   └── wwwroot/       # Statik dosyalar (CSS, JS, Resimler)
 └── OgrenciSistemi.sln # Visual Studio Solution dosyası
-
+```
 
 ---
 
