@@ -78,22 +78,21 @@ Uygulama, `StudentController` ve `DepartmentController` üzerinden gelen istekle
 
 ---
 
-🚀 Kurulum ve Çalıştırma
----
-```
-1. Projeyi indirip klasöre çıkarın  
-2. `OgrenciBS.sln` dosyasını Visual Studio ile açın  
-3. `appsettings.json` içindeki SQL Server bağlantısını düzenleyin  
-4. Package Manager Console: Update-Database komutunu çalıştırın  
-5. Projeyi F5 ile başlatın
-```bash
+## 🚀 Kurulum ve Çalıştırma
+
+1.  📥 **Projeyi İndirin**: Projeyi indirin ve bir klasöre çıkarın.
+2.  📂 **Çözümü Açın**: `OgrenciBS.sln` dosyasını Visual Studio ile açın.
+3.  ⚙️ **Veritabanı Yapılandırması**: `appsettings.json` dosyası içindeki SQL Server bağlantı dizesini (Connection String) kendi sunucunuza göre düzenleyin.
+4.  🔄 **Migration Uygulayın**: Package Manager Console üzerinden `Update-Database` komutunu çalıştırarak veritabanını oluşturun.
+5.  ▶️ **Projeyi Başlatın**: Projeyi **F5** tuşu ile derleyip başlatın.
 
 ---
 
-📂 Proje Yapısı
----
+## 📂 Proje Yapısı
 
-```
+Proje, katmanlı mimari prensiplerine uygun olarak şu şekilde yapılandırılmıştır:
+
+```text
 OgrenciSistemi-master/
 ├── OgrenciBS/
 │   ├── Controllers/   # MVC Controller katmanı
@@ -101,9 +100,9 @@ OgrenciSistemi-master/
 │   ├── Migrations/    # EF Core migration dosyaları
 │   ├── Models/        # Veri modelleri (Student, Department)
 │   ├── Views/         # Razor UI sayfaları
-│   └── wwwroot/       # Statik dosyalar (CSS, JS)
-└── OgrenciSistemi.sln
-```
+│   └── wwwroot/       # Statik dosyalar (CSS, JS, Resimler)
+└── OgrenciSistemi.sln # Visual Studio Solution dosyası
+
 
 ---
 
