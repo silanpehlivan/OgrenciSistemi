@@ -80,15 +80,13 @@ Uygulama, `StudentController` ve `DepartmentController` üzerinden gelen istekle
 
 🚀 Kurulum ve Çalıştırma
 ---
-
+```
 1. Projeyi indirip klasöre çıkarın  
 2. `OgrenciBS.sln` dosyasını Visual Studio ile açın  
 3. `appsettings.json` içindeki SQL Server bağlantısını düzenleyin  
-4. Package Manager Console:
-```bash
-Update-Database komutunu çalıştırın  
+4. Package Manager Console: Update-Database komutunu çalıştırın  
 5. Projeyi F5 ile başlatın
-```
+```bash
 
 ---
 
