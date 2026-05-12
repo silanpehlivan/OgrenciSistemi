@@ -1,10 +1,12 @@
 🎓 Öğrenci Bilgi Sistemi (OgrenciBS)
+---
 
 Bu proje, ASP.NET Core MVC mimarisi kullanılarak geliştirilmiş, öğrenci ve akademik bölüm yönetimini sağlayan modern bir web uygulamasıdır. MVC yapısı, Entity Framework Core ve katmanlı mimari prensipleri ile birleştirilerek sürdürülebilir ve ölçeklenebilir bir sistem tasarlanmıştır.
 
 ---
 
 🎯 Projenin Amacı
+---
 
 Bu projenin temel amacı, ASP.NET Core MVC mimarisini kullanarak gerçek dünya senaryolarına uygun bir öğrenci otomasyon sistemi geliştirmektir.
 
@@ -18,6 +20,7 @@ Bu kapsamda:
 ---
 
 📚 Temel Özellikler
+---
 
 ## 👨‍🎓 Öğrenci Yönetimi
 
@@ -28,6 +31,7 @@ Bu kapsamda:
 ---
 
 ## 🏢 Bölüm Yönetimi
+---
 
 - ➕ Bölüm Ekleme: Yeni akademik bölümlerin sisteme dahil edilmesi  
 - 🖼️ Görsel Yönetim: Bölüm görsellerinin tanımlanması ve gösterimi  
@@ -36,6 +40,7 @@ Bu kapsamda:
 ---
 
 ⚙️ Teknik Detaylar
+---
 
 | Özellik | Açıklama |
 |----------|----------|
@@ -49,6 +54,7 @@ Bu kapsamda:
 ---
 
 💻 Implementasyon Detayları
+---
 
 Proje, Entity Framework Core kullanılarak geliştirilmiş olup veritabanı işlemleri `AppDbContext` üzerinden yönetilmektedir. Migration yapısı ile veritabanı sürüm kontrolü sağlanmaktadır.
 
@@ -73,6 +79,7 @@ Uygulama, `StudentController` ve `DepartmentController` üzerinden gelen istekle
 ---
 
 🚀 Kurulum ve Çalıştırma
+---
 
 1. Projeyi indirip klasöre çıkarın  
 2. `OgrenciBS.sln` dosyasını Visual Studio ile açın  
@@ -87,6 +94,7 @@ komutunu çalıştırın
 ---
 
 📂 Proje Yapısı
+---
 
 ```
 OgrenciSistemi-master/
@@ -102,12 +110,10 @@ OgrenciSistemi-master/
 
 ---
 
-📜 Lisans
+## 📜 Lisans
 
-Bu proje MIT Lisansı kapsamında lisanslanmıştır. Detaylar LICENSE dosyasında yer almaktadır.
+Bu proje **MIT License** ile lisanslanmıştır. Detaylı bilgi için `LICENSE` dosyasını inceleyebilirsiniz.
 
----
-
-👩‍💻 Yazar
+## 👩‍💻 Geliştirici
 
 Şilan Pehlivan
