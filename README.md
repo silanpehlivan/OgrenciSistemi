@@ -1,16 +1,113 @@
-🎓 OgrenciBS: MVC Öğrenci Otomasyonu
-Bu proje, ASP.NET MVC mimarisinin temellerini uygulamak amacıyla geliştirilmiş, temel öğrenci yönetim süreçlerini kapsayan bir web uygulamasıdır.
+🎓 Öğrenci Bilgi Sistemi (OgrenciBS)
 
-🛠 Teknik Detaylar
-Mimari: Model-View-Controller (MVC)
+Bu proje, ASP.NET Core MVC mimarisi kullanılarak geliştirilmiş, öğrenci ve akademik bölüm yönetimini sağlayan modern bir web uygulamasıdır. MVC yapısı, Entity Framework Core ve katmanlı mimari prensipleri ile birleştirilerek sürdürülebilir ve ölçeklenebilir bir sistem tasarlanmıştır.
 
-Dil & Platform: C#, .NET Framework / ASP.NET
+---
 
-İşlevsellik: CRUD (Ekleme, Listeleme, Güncelleme, Silme) işlemleri.
+🎯 Projenin Amacı
 
-🎯 Kazanımlar
-Veritabanı verilerinin web arayüzüne dinamik entegrasyonu.
+Bu projenin temel amacı, ASP.NET Core MVC mimarisini kullanarak gerçek dünya senaryolarına uygun bir öğrenci otomasyon sistemi geliştirmektir.
 
-Clean code prensiplerine uygun klasör ve dosya yapısı yönetimi.
+Bu kapsamda:
 
-Backend mantığı ile Frontend bileşenlerinin koordinasyonu.
+- 🔄 Dinamik Entegrasyon: Veritabanı verilerinin anlık olarak arayüze yansıtılması  
+- 🧹 Clean Code: Temiz, okunabilir ve sürdürülebilir kod yapısı oluşturulması  
+- 🧩 MVC Uyumu: Backend ve frontend bileşenlerinin uyumlu çalışması  
+- 📊 Veri Yönetimi: Öğrenci, bölüm ve akademik bilgilerin merkezi yönetimi  
+
+---
+
+📚 Temel Özellikler
+
+## 👨‍🎓 Öğrenci Yönetimi
+
+- 🧾 CRUD İşlemleri: Öğrenci ekleme, listeleme, güncelleme ve silme  
+- 📊 Akademik Takip: Öğrenci not ortalaması (GPA) yönetimi  
+- 🏫 Bölüm Atama: Öğrencilerin bölümlerle ilişkilendirilmesi  
+
+---
+
+## 🏢 Bölüm Yönetimi
+
+- ➕ Bölüm Ekleme: Yeni akademik bölümlerin sisteme dahil edilmesi  
+- 🖼️ Görsel Yönetim: Bölüm görsellerinin tanımlanması ve gösterimi  
+- 🔗 İlişkisel Yapı: Bölüm-öğrenci ilişkilerinin otomatik yönetimi  
+
+---
+
+⚙️ Teknik Detaylar
+
+| Özellik | Açıklama |
+|----------|----------|
+| Dil | C# |
+| Framework | ASP.NET Core MVC |
+| Mimari | MVC (Model-View-Controller) |
+| Veritabanı | Microsoft SQL Server (EF Core) |
+| Frontend | Razor Pages, Bootstrap 5 |
+| Paradigma | Nesne Yönelimli Programlama (OOP) |
+
+---
+
+💻 Implementasyon Detayları
+
+Proje, Entity Framework Core kullanılarak geliştirilmiş olup veritabanı işlemleri `AppDbContext` üzerinden yönetilmektedir. Migration yapısı ile veritabanı sürüm kontrolü sağlanmaktadır.
+
+### 📌 Örnek Model: Department
+
+```csharp
+public class Department
+{
+    public int Id { get; set; }
+    public string Name { get; set; }
+    public string Image { get; set; }
+
+    // Bir bölümün birden fazla öğrencisi olabilir
+    public ICollection<Student> Students { get; set; }
+}
+```
+
+---
+
+Uygulama, `StudentController` ve `DepartmentController` üzerinden gelen istekleri işleyerek Razor View yapısı ile kullanıcıya dinamik içerik sunmaktadır.
+
+---
+
+🚀 Kurulum ve Çalıştırma
+
+1. Projeyi indirip klasöre çıkarın  
+2. `OgrenciBS.sln` dosyasını Visual Studio ile açın  
+3. `appsettings.json` içindeki SQL Server bağlantısını düzenleyin  
+4. Package Manager Console:
+```bash
+Update-Database
+```
+komutunu çalıştırın  
+5. Projeyi F5 ile başlatın  
+
+---
+
+📂 Proje Yapısı
+
+```
+OgrenciSistemi-master/
+├── OgrenciBS/
+│   ├── Controllers/   # MVC Controller katmanı
+│   ├── Data/          # DbContext ve veritabanı işlemleri
+│   ├── Migrations/    # EF Core migration dosyaları
+│   ├── Models/        # Veri modelleri (Student, Department)
+│   ├── Views/         # Razor UI sayfaları
+│   └── wwwroot/       # Statik dosyalar (CSS, JS)
+└── OgrenciSistemi.sln
+```
+
+---
+
+📜 Lisans
+
+Bu proje MIT Lisansı kapsamında lisanslanmıştır. Detaylar LICENSE dosyasında yer almaktadır.
+
+---
+
+👩‍💻 Yazar
+
+Şilan Pehlivan
