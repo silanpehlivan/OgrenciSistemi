@@ -25,6 +25,28 @@
 
 C# · ASP.NET Core MVC · EF Core
 
+## Teknik yaklaşım
+
+Student ve Department modelleri AppDbContext üzerinden saklanır; controller’lar kayıt işlemlerini, migration dosyaları şema değişikliklerini temsil eder.
+
+```mermaid
+flowchart LR
+A[Öğrenci ve bölüm ekranları] --> B[MVC controller]
+B --> C[AppDbContext]
+C --> D[SQL Server]
+```
+
+## Kodu incelemeye başlayın
+
+- [OgrenciBS/Controllers/DepartmentController.cs](OgrenciBS/Controllers/DepartmentController.cs)
+- [OgrenciBS/Controllers/StudentController.cs](OgrenciBS/Controllers/StudentController.cs)
+- [OgrenciBS/Data/AppDbContext.cs](OgrenciBS/Data/AppDbContext.cs)
+- [OgrenciBS/Migrations/AppDbContextModelSnapshot.cs](OgrenciBS/Migrations/AppDbContextModelSnapshot.cs)
+
+## Kapsam ve sınırlar
+
+Veritabanı bağlantısı ve şema kurulumu gerekir; gerçek öğrenci verileriyle kullanım için erişim ve veri koruma kontrolleri ayrıca değerlendirilmelidir.
+
 <details>
 <summary><strong>Kurulum, kullanım ve teknik ayrıntılar</strong></summary>
 
