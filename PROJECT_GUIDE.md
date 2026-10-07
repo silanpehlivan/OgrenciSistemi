@@ -111,7 +111,7 @@ Bu kapsamda:
 | Framework | ASP.NET Core MVC |
 | Mimari | MVC (Model-View-Controller) |
 | Veritabanı | Microsoft SQL Server (EF Core) |
-| Frontend | Razor Pages, Bootstrap 5 |
+| Frontend | Razor görünümleri, Bootstrap |
 | Paradigma | Nesne Yönelimli Programlama (OOP) |
 
 ---
@@ -164,7 +164,7 @@ OgrenciSistemi-master/
 │   ├── Models/        # Veri modelleri (Student, Department)
 │   ├── Views/         # Razor UI sayfaları
 │   └── wwwroot/       # Statik dosyalar (CSS, JS, Resimler)
-└── OgrenciSistemi.sln # Visual Studio Solution dosyası
+└── OgrenciBS.sln # Visual Studio Solution dosyası
 ```
 
 ---
