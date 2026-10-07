@@ -2,18 +2,33 @@
 
 # Öğrenci Bilgi Sistemi
 
-**Öğrenci ve bölüm yönetimi**
+### Öğrenci kayıtlarını sade bir yönetim akışında birleştir.
 
-![C#](https://img.shields.io/badge/C%23-2563eb?style=flat-square)
-![ASP.NET Core MVC](https://img.shields.io/badge/ASP.NET%20Core%20MVC-0891b2?style=flat-square)
-![EF Core](https://img.shields.io/badge/EF%20Core-7c3aed?style=flat-square)
-[![MIT License](https://img.shields.io/badge/License-MIT-16a34a?style=flat-square)](LICENSE)
+![C#](https://img.shields.io/badge/C%23-2563eb?style=for-the-badge)
+![ASP.NET Core MVC](https://img.shields.io/badge/ASP.NET%20Core%20MVC-0891b2?style=for-the-badge)
+![EF Core](https://img.shields.io/badge/EF%20Core-7c3aed?style=for-the-badge)
+[![MIT](https://img.shields.io/badge/MIT-16a34a?style=for-the-badge)](LICENSE)
 
 Öğrenci kayıtları ve akademik bölümler arasındaki ilişkileri Entity Framework Core ile yöneten web uygulaması.
+
+**Öğrenci ve bölüm yönetimi**
+
+[Projeyi keşfet](https://github.com/silanpehlivan/OgrenciSistemi/tree/master) · [Kurulum ve ayrıntılar](#projeyi-çalıştırmak-ve-incelemek)
 
 </div>
 
 ---
+
+## İçeride neler var?
+
+- **01** · Öğrenci ekleme, düzenleme ve listeleme
+- **02** · Bölüm atama ve not ortalaması takibi
+- **03** · SQL Server bağlantısı ve migration yönetimi
+
+## Projeyi çalıştırmak ve incelemek
+
+<details>
+<summary><strong>Kurulum, kod yapısı ve teknik notları aç</strong></summary>
 
 ## Öne Çıkanlar
 
@@ -25,7 +40,7 @@
 
 C# · ASP.NET Core MVC · EF Core
 
-## Teknik yaklaşım
+### Teknik yaklaşım
 
 Student ve Department modelleri AppDbContext üzerinden saklanır; controller’lar kayıt işlemlerini, migration dosyaları şema değişikliklerini temsil eder.
 
@@ -36,19 +51,18 @@ B --> C[AppDbContext]
 C --> D[SQL Server]
 ```
 
-## Kodu incelemeye başlayın
+### Kodu incelemeye başlayın
 
 - [OgrenciBS/Controllers/DepartmentController.cs](OgrenciBS/Controllers/DepartmentController.cs)
 - [OgrenciBS/Controllers/StudentController.cs](OgrenciBS/Controllers/StudentController.cs)
 - [OgrenciBS/Data/AppDbContext.cs](OgrenciBS/Data/AppDbContext.cs)
 - [OgrenciBS/Migrations/AppDbContextModelSnapshot.cs](OgrenciBS/Migrations/AppDbContextModelSnapshot.cs)
 
-## Kapsam ve sınırlar
+### Kapsam ve sınırlar
 
 Veritabanı bağlantısı ve şema kurulumu gerekir; gerçek öğrenci verileriyle kullanım için erişim ve veri koruma kontrolleri ayrıca değerlendirilmelidir.
 
-<details>
-<summary><strong>Kurulum, kullanım ve teknik ayrıntılar</strong></summary>
+
 
 Bu proje, ASP.NET Core MVC mimarisi kullanılarak geliştirilmiş, öğrenci ve akademik bölüm yönetimini sağlayan modern bir web uygulamasıdır. MVC yapısı, Entity Framework Core ve katmanlı mimari prensipleri ile birleştirilerek sürdürülebilir ve ölçeklenebilir bir sistem tasarlanmıştır.
 
@@ -154,6 +168,8 @@ OgrenciSistemi-master/
 ```
 
 ---
+
+
 
 
 </details>
